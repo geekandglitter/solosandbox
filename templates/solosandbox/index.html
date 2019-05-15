@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style=width:600px;>
+<span style="font-size:20px">
+
+
+
+    <p>Want to cook something? Choose your recipe, click through to my recipe blog, print it, and you're ready!</p>
+
+
+   <p><a href="/bloggerapigetalpha.html">See all Recipes in Alphabetical Order  </a>  </p>
+   <p> or </p>
+
+   <p><a href="/show_label_list.html">Choose Recipes by Ingredients  </a>    </p>
+  </ol>
+</span>
+<br><br>
+<p style="font-size:10px">Email or Text me with any comments or questions</p>
+<p>****************************************************************************</p>
+
+<br>
+<br>
+<br>
+
+ <span style="font-size:10px">
+ <h2>Recipe Views for Developers</h2>
+    <p>Below is the programmer section. It tries different methods to obtain all the titles and links to the recipes in my recipes blog.  </p>
+    <ol ">
+
+    <li><a href="/getfeedalpha.html">All Recipes from RSS Feed alphabetically</a><br>uses feedparser to get the feed and doesn't use the google blogger API </li>
+
+    <li><a href="/getfeedchron.html">All Recipes from RSS Feed with the most recently cooked first </a><br>uses feedparser to get the feed and doesn't use the google blogger API </li>
+
+    <li><a href="/bloggerapigetalpha.html">All Recipes from Blogger API  </a><br>uses blogger API and requests.get to get the feed, then loads the Json Alphabetical  </li>
+    <li><b><a href="/bloggerapigetchron.html">All Recipes from Blogger API  </a><br>uses blogger API and requests.get to get the feed, then loads the Json Chronological</b> </li>
+
+
+    <li><a href="/homepagesoup.html">Most Recipes scraped from the home page  </a><br>uses requests and BeautifulSoup<br> I couldn't get it to find all the posts</li>
+
+    <li><a href="/get_recipe_by_label.html">Get recipe by label (hard coded for testing purposes)  </a><br>uses Google Blogger API   </li>
+
+     <li><b><a href="/show_label_list.html">Show labels and choose recipes by labels </a><br>from Json</b>   </li>
+
+
+     <li><a href="/modelfun.html">All Recipes from Blogger API, this will also store the URL's in a model</a><br></li>
+
+     # The next two views are attempting to be the same. The first is a functional view; the second a class-based view
+     <li><a href="/get_the_model_data.html">This will retrieve the URL's from the model</a><br></li>
+     <li><a href="/blogurls_list.html">This will retrieve the URL's from the model using a class based view</a><br></li>
+     # this is how ListView names the list
+
+   </ol>
+</span></ol>
+
+</div>
+{% endblock content %}
+
+
+
+

@@ -1,0 +1,7 @@
+django
+beautifulsoup4==4.6.0 # can also be referred to as bs4
+feedparser
+django-secure
+requests
+psycopg2-binary==2.7.5
+views

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{history}} Hey this is the history</h1>
+  <h1>{{title}} Hey this is the title</h1>
+  <h2>{{count}} Hey this is the return code</h2>
+   <h3>As you can see, the list is not complete</h3>
+   <p>It seems that blogger has a limit on how many posts can exist on the home page, even with a settings override</p>
+   <p>{{thepage| safe}}</p>
+ 
+   
+{% endblock content %}

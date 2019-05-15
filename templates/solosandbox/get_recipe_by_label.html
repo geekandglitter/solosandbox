@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>I Stay Home and Bake Cookies</h1>
+  <h2>{{numposts}} Posts from RSS feed by label (hard coded for testing purposes) </h2> 
+  <p>{{myfeed  | safe}}</p>
+  
+{% endblock content %}
+
+ 
