@@ -15,7 +15,8 @@ import os  # this python package's functions allow interface with the OS: Window
 from django.core.exceptions import ImproperlyConfigured  # used by get_secret
 
 # BASE_DIR: This is always needed in settings. Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # this line is always needed in settings.py. It shows where manage.py is.
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # this line is always needed in settings.py.
+# It shows where manage.py is.
 print("The BASE_DIR is", BASE_DIR)
 
 
